@@ -1,0 +1,34 @@
+<div class="forma">
+  <form class="example-form" #fr="ngForm" (ngSubmit)="registra()">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Firstname</mat-label>
+      <input matInput ngModel name="firstname" placeholder="Ex. Mario" [(ngModel)]="object.firstname">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Lastname</mat-label>
+      <input matInput ngModel name="lastname" placeholder="Ex. Rossi" [(ngModel)]="object.lastname">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" ngModel name="email" placeholder="Ex. m.r@example.com" [(ngModel)]="object.email">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput ngModel name="password" placeholder="Ex. abc123Sushi"
+        [(ngModel)]="object.password">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>Select an option</mat-label>
+      <mat-select [(ngModel)]="object.roles" [(value)]="selected" name="roles">
+        <mat-option name="roles" value="admin">Admin</mat-option>
+        <mat-option value="cliente">Cliente</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button id="arancio" mat-raised-button color="accent">ADD</button>
+  </form>
+</div>

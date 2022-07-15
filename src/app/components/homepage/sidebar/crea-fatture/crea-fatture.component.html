@@ -1,0 +1,44 @@
+<form class="example-form" #f="ngForm" (ngSubmit)="creaFatt()">
+  <mat-hint>
+    <h1>Aggiungi Fattura</h1>
+  </mat-hint>
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Data Fattura</mat-label>
+    <input ngModel name="data" matInput type="date">
+  </mat-form-field>
+
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Stato fattura</mat-label>
+    <mat-select ngModel [(value)]="selected" name="stato">
+      <mat-option value="nonpagata">Non Pagata</mat-option>
+      <mat-option value="pagata">Pagata</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Causale</mat-label>
+    <input ngModel name="causale" matInput>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Importo</mat-label>
+    <input ngModel name="importo" matInput>
+  </mat-form-field>
+
+
+  <!-- con array clienti -->
+  <mat-form-field appearance="outline">
+    <mat-label>Cliente</mat-label>
+    <mat-select ngModel [(value)]="selected2" name="cliente">
+      <mat-option *ngFor="let ele of clienti" [value]="ele.id">
+        {{ele.firstname}} {{ele.lastname}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  <div> <button id="arancio" mat-raised-button color="accent">Aggiungi Fattura</button>
+  </div>
+</form>

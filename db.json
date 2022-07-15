@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "email": "aabb@aaa.it",
+      "password": "",
+      "firstname": "giovanni",
+      "lastname": "Marino",
+      "roles": "cliente",
+      "id": 4
+    },
+    {
+      "email": "francesca@epicode.it",
+      "password": "$2a$10$vqZtZ/R62tpPlpZnUGFtN.SuA6Gq1ElM/vCiWiG0aK0.aSVJsgRti",
+      "firstname": "Francesca",
+      "lastname": "Esposito",
+      "roles": "admin",
+      "id": 5
+    },
+    {
+      "email": "edo.pelle@epicode.it",
+      "password": "$2a$10$TSGZRtjlfyoKXL3Ff51i2.ZCY1eTTRhEN/OeFA1xMVVmobTXj0N5W",
+      "firstname": "Edoardo",
+      "lastname": "Pellegrini",
+      "roles": "admin",
+      "id": 6
+    },
+    {
+      "email": "simo.nico@epicode.it",
+      "password": "$2a$10$Saqc.Ut1pUu0K2N150dDvO9F8sqkhhVl/CxZ3Mbx0MmGoPfLKKID2",
+      "firstname": "Simone",
+      "lastname": "Nicotra",
+      "roles": "admin",
+      "id": 7
+    },
+    {
+      "email": "cla.albe@epicode.it",
+      "password": "$2a$10$DiCuVHCZ07ABHlBc1o3OSOMQFgDdj4aFWg/5./4MkuYt6NZiSHhLG",
+      "firstname": "Claudia",
+      "lastname": "Albertini",
+      "roles": "admin",
+      "id": 10
+    },
+    {
+      "email": "vlasov.m@epicode.it",
+      "password": "$2a$10$goRAliY1K656IuHErahVcOQ5VkMS8Ge0zpit9/imhelDXS4lzR28y",
+      "firstname": "Vlasov",
+      "lastname": "Mazzucchi",
+      "roles": "admin",
+      "id": 12
+    },
+    {
+      "email": "cogecori@mailinator.com",
+      "password": "$2a$10$B.oKRDhBkSubHJ/aYx6GZ.j8YI8F72jzGJc3nR2PhaU7ISU.8DMTu",
+      "firstname": "Warren",
+      "lastname": "Crosby",
+      "roles": "cliente",
+      "id": 13
+    },
+    {
+      "email": "r.g@epicode.it",
+      "password": "$2a$10$4HfGHXRYyeb7.1wkIgGr9OYNb9YQBsRWU9Z4naVwiebtGugGiQ2SG",
+      "firstname": "Roberto",
+      "lastname": "Giacobbo",
+      "roles": "cliente",
+      "id": 14
+    },
+    {
+      "email": "sere.delfi@epicode.it",
+      "password": "$2a$10$JfYYkFSpQ2xIMKFmEoRQrea9/89wEq6gOYYRgyeyowjuhxZP.sauy",
+      "firstname": "Serena",
+      "lastname": "Delfino",
+      "roles": "cliente",
+      "id": 15
+    },
+    {
+      "email": "cate.fiera@gmail.it",
+      "password": "$2a$10$ze.nfUK3BdQKHxS2EGL.x.VDW0617BAGYzmoV8TF0BZ1wfU0qcGzS",
+      "firstname": "Caterina",
+      "lastname": "Fierobecco",
+      "roles": "cliente",
+      "id": 16
+    },
+    {
+      "email": "salta@gmail.it",
+      "password": "$2a$10$L6WQvM0ieJ6c/f/g/YmyGu6Sj2A7xN5GnIWc.Ie0QcgE0M.cvv2D2",
+      "firstname": "Giuseppina ",
+      "lastname": "Saltatrice",
+      "roles": "cliente",
+      "id": 17
+    },
+    {
+      "email": "moni.pazza@gmail.it",
+      "password": "",
+      "firstname": "Monica ",
+      "lastname": "Esaltata",
+      "roles": "admin",
+      "id": 18
+    }
+  ],
+  "fatture": [
+    {
+      "data": "2022-07-14",
+      "stato": "nonpagata",
+      "causale": "acquisto wc",
+      "importo": "1234",
+      "cliente": 4,
+      "id": 1
+    },
+    {
+      "data": "2022-07-15",
+      "stato": "pagata",
+      "causale": "asdfgh",
+      "importo": "123456",
+      "cliente": 4,
+      "id": 2
+    },
+    {
+      "data": "2050-10-05",
+      "stato": "nonpagata",
+      "causale": "Varie",
+      "importo": "4000",
+      "cliente": 9,
+      "id": 3
+    },
+    {
+      "data": "2022-07-15",
+      "stato": "pagata",
+      "causale": "Prova ",
+      "importo": "5000",
+      "cliente": 13,
+      "id": 4
+    },
+    {
+      "data": "2022-07-01",
+      "stato": "pagata",
+      "causale": "Prova",
+      "importo": "5040",
+      "cliente": 14,
+      "id": 5
+    },
+    {
+      "data": "2022-07-15",
+      "stato": "pagata",
+      "causale": "Prova",
+      "importo": "10000",
+      "cliente": 16,
+      "id": 6
+    },
+    {
+      "data": "2022-07-01",
+      "stato": "nonpagata",
+      "causale": "Acquisto zoo",
+      "importo": "50000",
+      "cliente": 18,
+      "id": 7
+    }
+  ]
+}

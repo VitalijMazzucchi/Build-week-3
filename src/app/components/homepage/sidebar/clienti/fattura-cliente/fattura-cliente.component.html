@@ -1,0 +1,6 @@
+<h1>Fatture Cliente</h1>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor="let ele of fatture">
+    {{ele.stato}} - {{ele.causale}} - &euro;{{ele.importo}}
+  </mat-list-item>
+</mat-list>

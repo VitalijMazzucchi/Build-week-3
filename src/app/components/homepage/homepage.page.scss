@@ -1,0 +1,90 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .white{
+    color: white;
+    font-weight: bold;
+  }
+  .esci{
+    width: 100%;
+
+  }
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+
+  h1.example-app-name {
+    margin-left: 8px;
+  }
+
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  mat-sidenav-container{
+    text-align: center;
+  }
+  mat-nav-list{
+    a{
+      margin: 1rem 0;
+    }
+    span{
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  mat-card{
+    margin-top:2rem;
+
+
+  }
+  .card_1{
+    display: flex;
+    justify-content: space-around;
+    .img{
+      width: 200px;
+      height: 200px;
+    }
+    img{
+      border-radius: 50%;
+      padding:1rem;
+      margin-right:0.5rem;
+
+    }
+    mat-card-content{
+      margin-top: 0.3rem;
+      padding: 0.5rem;
+
+    }
+  }
+/*   mat-sidenav-container{
+    padding:2rem 0;
+    margin-top: 2rem;
+
+  } */
+  mat-sidenav-content{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url(https://media4.giphy.com/media/UYBDCJjwOd9Re/giphy.gif?cid=ecf05e47g26eiivvqmwb1kk1dh2wfm4chlblntygk6l76qwq&rid=giphy.gif&ct=g);
+  background-size: auto;
+  margin: 0;
+  }
+
+
+

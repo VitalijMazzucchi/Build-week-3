@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<app-stelline></app-stelline>
+<div>
+  <h1>Login</h1>
+  <form class="example-form" #f="ngForm" (ngSubmit)="accedi()">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" name="email" ngModel>
+      <mat-icon matSuffix>person</mat-icon>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input ngModel matInput [type]="hide ? 'password' : 'text'" name="password">
+      <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide" name="password">
+        <mat-icon>{{hide ? 'lock' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <br>
+
+    <button id="arancio" type="submit" class="accedi" mat-stroked-button>Accedi</button>
+  </form>
+</div>
